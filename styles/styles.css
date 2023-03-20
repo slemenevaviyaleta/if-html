@@ -8,11 +8,13 @@
 
 .main_container {
     font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex_container {
     display: flex;
-    gap: 250px;
+    justify-content: space-between;
     margin: 120px 272px 64px 105px;
 }
 
@@ -28,7 +30,7 @@ p {
 }
 
 .rights {
-    margin: 0 1082px 120px 105px;
+    margin-left: 105px;
     width: 500px;
     font-size: 14px;
     line-height: 16px;
