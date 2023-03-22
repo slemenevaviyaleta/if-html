@@ -2,54 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <title>Lesson 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+<header class="header">
+    <div class="wrapper">
+        <div class="header_wrapper">
+            <div class="header_logo">
+                <img src="styles/images/triphouse.png" alt="logo" class="header_pic">
+            </div>
+            <nav class="header_nav">
+                <a href="#!" class="header_link">
+                    Stays
+                </a>
+                <a href="#!" class="header_link">
+                    Attractions
+                </a>
+                <a href="#!" class="header_link">
+                    <img src="styles/images/sun.png" alt="sun">
+                </a>
+                <a href="#!" class="header_link">
+                    <img src="styles/images/account.png" alt="profile">
+                </a>
+            </nav>
+        </div>
+        <img src="styles/images/highlight.png" alt="highlight" class="underline_highlight">
+        <section class="intro">
+            <div class="wrapper">
+                <h1 class="intro_title">Discover stays<br>to live, work or just relax</h1>
+            </div>
+        </section>
+        <section class="search-form">
+            <div class="subtitles">
+                <p>Your destination or hotel name</p>
+                <p>Check-in — Check-out</p>
+            </div>
+            <div class="search-form_info">
+                <input type="text" class="search-form_1" placeholder="New York"><input type="text" class="search-form_2" placeholder="Tue 15 Sept — Sat 19 Sept"><input type="text" class="search-form_3" placeholder="2 Adults — 0 Children — 1 Room"><button type="submit" class="search-button">Search</button>
+            </div>
+        </section>
+
+        <section class="download-buttons">
+            <div class="google-play_button">
+                <a href="#!" class="download-app_button">
+                    <img src="styles/images/google-play.png" alt="Google Play button">
+                </a>
+            </div>
+            <div class="app-store_button">
+                <a href="#!" class="download-app_button">
+                    <img src="styles/images/app-store.svg" alt="App Store Button">
+                </a>
+            </div>
+        </section>
+    </div>
+
+</header>
+
+
 <section class="section" id="we-offer">
-    <div class="main_container">
-        <h2 class="title">What do we offer</h2>
-        <img src="images/highlight.png" alt="highlight" class="highlight">
+    <div class="container_offer">
+        <h2 class="titleOffer">What do we offer</h2>
+        <img src="styles/images/highlight.png" alt="highlight" class="highlight">
         <div class="offers">
             <figure class="figure">
                 <div class="img">
                     <img
-                            src="images/headphones.svg"
+                            src="styles/images/headphones.svg"
                             alt="headphones"
                             class="picture"
                     />
                     <figcaption>
-                        <p class="help">Support 24/7</p>
+                        <p class="help_offer">Support 24/7</p>
                     </figcaption>
                 </div>
                 <div class="img">
                     <img
-                            src="images/messages.png"
+                            src="styles/images/messages.png"
                             alt="messages"
                             class="picture"
                     />
                     <figcaption>
-                        <p class="help">Communicate directly</p>
+                        <p class="help_offer">Communicate directly</p>
                     </figcaption>
                 </div>
                 <div class="img">
                     <img
-                            src="images/computer.png"
+                            src="styles/images/computer.png"
                             alt="computer"
                             class="picture"
                     />
                     <figcaption>
-                        <p class="help">Book online</p>
+                        <p class="help_offer">Book online</p>
                     </figcaption>
                 </div>
                 <div class="img">
                     <img
-                            src="images/like.png"
+                            src="styles/images/like.png"
                             alt="like"
                             class="picture"/>
                     <figcaption>
-                        <p class="help">Real guest reviews</p>
+                        <p class="help_offer">Real guest reviews</p>
                     </figcaption>
                 </div>
             </figure>
@@ -57,5 +111,33 @@
     </div>
 </section>
 
+<footer>
+    <div class="main_container">
+        <div class="flex_container">
+            <div class="about_container">
+                <p class="title-footer">About</p>
+                <p class="text-footer">How Triphouse works</p>
+                <p class="text-footer">Careers</p>
+                <p class="text-footer">Privacy</p>
+                <p class="text-footer">Terms</p>
+            </div>
+            <div class="propertyTypes_container">
+                <p class="title-footer">Property Types</p>
+                <p class="text-footer">Guest houses</p>
+                <p class="text-footer">Hotels</p>
+                <p class="text-footer">Apartments</p>
+                <p class="text-footer">Villas</p>
+                <p class="text-footer">Holiday homes</p>
+                <p class="text-footer">Hostels</p>
+            </div>
+            <div class="support">
+                <p class="title-footer">Support</p>
+                <p class="text-footer">Contact Customer Service</p>
+                <p class="text-footer">FAQ</p>
+            </div>
+        </div>
+        <p class="rights">© 2022Triphouse, Inc. All rights reserved</p>
+    </div>
+</footer>
 </body>
 </html>
