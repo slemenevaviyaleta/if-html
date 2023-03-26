@@ -6,6 +6,128 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+.header {
+    background-image: url("/styles/images/background.svg");
+    padding-top: 51px;
+    width: 1440px;
+    height: 900px;
+
+}
+
+.wrapper {
+    max-width: 1223px;
+    margin: 0 auto;
+
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.underline_highlight {
+    margin-bottom: 196px;
+    margin-left: 910px;
+    width: 50px;
+}
+
+.header_nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_link {
+    margin-left: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+
+.header_link:last-child {
+    margin-right: 0;
+}
+
+.header_link:hover, .header_link:active {
+    opacity: .75;
+}
+
+.intro_title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+.subtitles {
+    display: flex;
+    color: white;
+    gap: 221px;
+    margin-left: 24px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.search-form_1 {
+    box-sizing: border-box;
+    width: 467px;
+    height: 64px;
+    border: 3px solid #F3F3F4;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.search-form_2 {
+    box-sizing: border-box;
+    width: 259px;
+    height: 64px;
+    border: 3px solid #F5BD41;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.search-form_3 {
+    box-sizing: border-box;
+    width: 305px;
+    height: 64px;
+    border: 3px solid #F3F3F4;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.search-button {
+    width: 192px;
+    height: 64px;
+    background: #3077C6;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.search-form {
+    margin-bottom: 120px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 16px;
+    margin-left: 481px;
+}
+
+
 .titleOffer {
     text-align: center;
     font-weight: 500;
@@ -20,7 +142,7 @@ body {
     color: black;
 }
 
-.container {
+.container_offer {
     width: 100%;
     max-width: 1440px;
     margin: 120px 0 122px;
@@ -95,5 +217,3 @@ body {
     font-size: 14px;
     line-height: 16px;
 }
-
-
