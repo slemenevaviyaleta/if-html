@@ -8,102 +8,102 @@
 </head>
 <body>
 <header class="header">
-    <div class="wrapper">
-        <div class="header_wrapper">
-            <div class="header_logo">
-                <img src="styles/images/triphouse.png" alt="logo" class="header_pic">
+    <div class="header__container">
+        <nav class="header__navbar">
+            <div class="header__logo">
+                <div class="sprites__container svg-1"></div>
             </div>
-            <nav class="header_nav">
-                <a href="#!" class="header_link">
+            <div class="header__menu">
+                <a href="#!" class="header__link stays">
                     Stays
                 </a>
-                <a href="#!" class="header_link">
+                <a href="#!" class="header__link attractions">
                     Attractions
                 </a>
-                <a href="#!" class="header_link">
-                    <img src="styles/images/sun.png" alt="sun">
+                <a href="#!" class="header__link">
+                    <div class="sprites__container svg-2"></div>
                 </a>
-                <a href="#!" class="header_link">
-                    <img src="styles/images/account.png" alt="profile">
+                <a href="#!" class="header__link">
+                    <div class="sprites__container svg-3"></div>
                 </a>
-            </nav>
-        </div>
-        <img src="styles/images/highlight.png" alt="highlight" class="underline_highlight">
-        <section class="intro">
-            <div class="wrapper">
-                <h1 class="intro_title">Discover stays<br>to live, work or just relax</h1>
             </div>
-        </section>
-        <section class="search-form">
-            <div class="subtitles">
+        </nav>
+
+        <section class="main">
+            <h1 class="main__title">Discover stays
+                to live, work or just relax</h1>
+            <div class="main__subtitles">
                 <p>Your destination or hotel name</p>
                 <p>Check-in — Check-out</p>
             </div>
-            <div class="search-form_info">
-                <input type="text" class="search-form_1" placeholder="New York"><input type="text" class="search-form_2" placeholder="Tue 15 Sept — Sat 19 Sept"><input type="text" class="search-form_3" placeholder="2 Adults — 0 Children — 1 Room"><button type="submit" class="search-button">Search</button>
-            </div>
-        </section>
-
-        <section class="download-buttons">
-            <div class="google-play_button">
-                <a href="#!" class="download-app_button">
-                    <img src="styles/images/google-play.png" alt="Google Play button">
-                </a>
-            </div>
-            <div class="app-store_button">
-                <a href="#!" class="download-app_button">
-                    <img src="styles/images/app-store.svg" alt="App Store Button">
-                </a>
+            <div class="main__form">
+                <form action="" class="form">
+                    <label class="form__label">
+                        <input type="text" class="form__input destination" placeholder="New York">
+                        <input type="text" class="form__input date" placeholder="Tue 15 Sept — Sat 19 Sept">
+                        <input type="text" class="form__input people" placeholder="2 Adults — 0 Children — 1 Room">
+                        <button class="form__button">Search</button>
+                    </label>
+                </form>
             </div>
         </section>
     </div>
-
+    <section class="download">
+        <div class="download__google">
+            <a href="#!" class="download__button">
+                <div class="sprites__container svg-4"></div>
+            </a>
+        </div>
+        <div class="download__apple">
+            <a href="#!" class="download__button">
+                <div class="sprites__container svg-5"></div>
+            </a>
+        </div>
+    </section>
 </header>
 
-
-<section class="section" id="we-offer">
-    <div class="container_offer">
-        <h2 class="titleOffer">What do we offer</h2>
-        <img src="styles/images/highlight.png" alt="highlight" class="highlight">
-        <div class="offers">
+<section class="offer">
+    <div class="offer__container">
+        <h2 class="offer__title">What do we offer</h2>
+        <div class="offer__row">
             <figure class="figure">
-                <div class="img">
+                <div class="offer__card headphones">
                     <img
                             src="styles/images/headphones.svg"
                             alt="headphones"
-                            class="picture"
+                            class="offer__svg"
                     />
                     <figcaption>
-                        <p class="help_offer">Support 24/7</p>
+                        <p class="offer__subtitle">Support 24/7</p>
                     </figcaption>
                 </div>
-                <div class="img">
+                <div class="offer__card messages">
                     <img
-                            src="styles/images/messages.png"
+                            src="styles/images/messages.svg"
                             alt="messages"
-                            class="picture"
+                            class="offer__svg"
                     />
                     <figcaption>
-                        <p class="help_offer">Communicate directly</p>
+                        <p class="offer__subtitle">Communicate directly</p>
                     </figcaption>
                 </div>
-                <div class="img">
+                <div class="offer__card computer">
                     <img
-                            src="styles/images/computer.png"
+                            src="styles/images/computer.svg"
                             alt="computer"
-                            class="picture"
+                            class="offer__svg"
                     />
                     <figcaption>
-                        <p class="help_offer">Book online</p>
+                        <p class="offer__subtitle">Book online</p>
                     </figcaption>
                 </div>
-                <div class="img">
+                <div class="offer__card like">
                     <img
-                            src="styles/images/like.png"
+                            src="styles/images/like.svg"
                             alt="like"
-                            class="picture"/>
+                            class="offer__svg"/>
                     <figcaption>
-                        <p class="help_offer">Real guest reviews</p>
+                        <p class="offer__subtitle">Real guest reviews</p>
                     </figcaption>
                 </div>
             </figure>
@@ -111,33 +111,32 @@
     </div>
 </section>
 
-<footer>
-    <div class="main_container">
-        <div class="flex_container">
-            <div class="about_container">
-                <p class="title-footer">About</p>
-                <p class="text-footer">How Triphouse works</p>
-                <p class="text-footer">Careers</p>
-                <p class="text-footer">Privacy</p>
-                <p class="text-footer">Terms</p>
-            </div>
-            <div class="propertyTypes_container">
-                <p class="title-footer">Property Types</p>
-                <p class="text-footer">Guest houses</p>
-                <p class="text-footer">Hotels</p>
-                <p class="text-footer">Apartments</p>
-                <p class="text-footer">Villas</p>
-                <p class="text-footer">Holiday homes</p>
-                <p class="text-footer">Hostels</p>
-            </div>
-            <div class="support">
-                <p class="title-footer">Support</p>
-                <p class="text-footer">Contact Customer Service</p>
-                <p class="text-footer">FAQ</p>
-            </div>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__column about">
+            <p class="footer__title">About</p>
+            <p class="footer__subtitle">How Triphouse works</p>
+            <p class="footer__subtitle">Careers</p>
+            <p class="footer__subtitle">Privacy</p>
+            <p class="footer__subtitle">Terms</p>
         </div>
-        <p class="rights">© 2022Triphouse, Inc. All rights reserved</p>
+        <div class="footer__column property">
+            <p class="footer__title">Property types</p>
+            <p class="footer__subtitle">Guest houses</p>
+            <p class="footer__subtitle">Hotels</p>
+            <p class="footer__subtitle">Apartments</p>
+            <p class="footer__subtitle">Villas</p>
+            <p class="footer__subtitle">Holiday homes</p>
+            <p class="footer__subtitle">Hostels</p>
+        </div>
+        <div class="footer__column support">
+            <p class="footer__title">Support</p>
+            <p class="footer__subtitle">Contact Customer Service</p>
+            <p class="footer__subtitle">FAQ</p>
+        </div>
     </div>
+    <p class="footer__paragraph">© 2022Triphouse, Inc. All rights reserved</p>
 </footer>
 </body>
 </html>
