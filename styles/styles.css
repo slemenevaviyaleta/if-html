@@ -11,10 +11,10 @@ body {
 }
 
 .svg-sprite {
-    position:absolute;
-    visibility:hidden;
-    width:0;
-    height:0;
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
 
 .svg-logo {
@@ -44,49 +44,61 @@ body {
 }
 
 :root {
-    --col-width: calc(100%/14);
+    --col-width: calc(100% / 14);
 }
 
 .col-lg-1 {
     width: var(--col-width);
 }
+
 .col-lg-2 {
-    width: calc(var(--col-width)*2);
+    width: calc(var(--col-width) * 2);
 }
+
 .col-lg-3 {
-    width: calc(var(--col-width)*3);
+    width: calc(var(--col-width) * 3);
 }
+
 .col-lg-4 {
-    width: calc(var(--col-width)*4);
+    width: calc(var(--col-width) * 4);
 }
+
 .col-lg-5 {
-    width: calc(var(--col-width)*5);
+    width: calc(var(--col-width) * 5);
 }
+
 .col-lg-6 {
     width: 50%;
 }
+
 .col-lg-7 {
-    width: calc(var(--col-width)*7);
+    width: calc(var(--col-width) * 7);
 }
+
 .col-lg-8 {
-    width: calc(var(--col-width)*8);
+    width: calc(var(--col-width) * 8);
 }
+
 .col-lg-9 {
-    width: calc(var(--col-width)*9);
+    width: calc(var(--col-width) * 9);
 }
+
 .col-lg-10 {
-    width: calc(var(--col-width)*10);
+    width: calc(var(--col-width) * 10);
 }
+
 .col-lg-11 {
-    width: calc(var(--col-width)*11);
+    width: calc(var(--col-width) * 11);
 }
+
 .col-lg-12 {
-    width: calc(var(--col-width)*12);
+    width: calc(var(--col-width) * 12);
 }
 
 .col-lg-13 {
-    width: calc(var(--col-width)*13);
+    width: calc(var(--col-width) * 13);
 }
+
 .col-lg-14 {
     width: 100%;
 }
