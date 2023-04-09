@@ -104,7 +104,7 @@ body {
 }
 
 .header {
-    background-image: url("/styles/images/background.png");
+    background-image: url("/images/background.png");
     padding-top: 51px;
     min-height: 100%;
 }
