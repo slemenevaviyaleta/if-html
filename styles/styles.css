@@ -144,6 +144,10 @@ body {
     line-height: 28px;
 }
 
+.header__link:last-child {
+    display: none;
+}
+
 .header__link:hover, .header__link:active {
     opacity: .75;
 }
@@ -170,6 +174,7 @@ body {
     line-height: 21px;
     margin-bottom: 24px;
 }
+
 
 .form {
     height: 64px;
@@ -369,6 +374,83 @@ input:focus {
         width: 100%;
     }
 
+    .header {
+        padding-top: 12px;
+    }
+
+    .header__navbar {
+        margin: 0 16px 52px;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: end;
+    }
+
+    .main__title {
+        font-size: 30px;
+        line-height: 35px;
+        margin-left: 16px;
+        margin-bottom: 27px;
+    }
+
+    .main__subtitles {
+        display: none;
+    }
+    .main__form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main__form label,
+    .main__form input,
+    .form__button {
+        width: 100%;
+    }
+
+    .download {
+        padding-left: 0;
+        padding-bottom: 40px;
+        justify-content: center;
+    }
+
+    .destination {
+        width: 443px;
+        margin-right: 20px;
+    }
+
+    .date {
+        width: 236px;
+    }
+
+    .people {
+        width: 285px;
+    }
+
+
+    .svg-logo {
+        width: 122px;
+        height: 24px;
+    }
+
+    .attractions {
+        display: none;
+    }
+
+    .stays {
+        display: none;
+    }
+
+    .svg-account {
+        width: 24px;
+        height: 24px;
+    }
+
+    .svg-night {
+        width: 16px;
+        height: 24px;
+    }
+
     .offer__card {
         margin: 0 auto;
         padding-bottom: 32px;
@@ -481,6 +563,15 @@ input:focus {
         fill: #FFFFFF;
         padding: 40px 0;
         margin: auto;
+    }
+
+    .header__link:last-child {
+        display: inline;
+    }
+
+    .svg-menu {
+        width: 24px;
+        height: 16px;
     }
 
 }
