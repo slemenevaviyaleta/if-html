@@ -144,11 +144,11 @@ body {
     content: "";
     position: absolute;
     height: 3px;
-    background-color:var(--border-color);
+    background-color: var(--border-color);
     width: 50px;
     top: 100%;
     right: 50%;
-    transform: translate(50%,50%);
+    transform: translate(50%, 50%);
 }
 
 .attractions {
@@ -271,7 +271,7 @@ input:focus {
     width: 100px;
     top: 140%;
     right: 50%;
-    transform: translate(50%,50%);
+    transform: translate(50%, 50%);
 }
 
 
@@ -345,6 +345,7 @@ input:focus {
     grid-column: span 3;
 }
 
+
 .favorites_link {
     text-decoration: none;
     color: #3077C6;
@@ -357,7 +358,7 @@ input:focus {
     margin-bottom: 24px;
 }
 
-.favorites_paragraph {
+.favorites_caption {
     margin-top: 24px;
     color: #BFBFBF;
     font-weight: 400;
@@ -365,11 +366,153 @@ input:focus {
     line-height: 28px;
 }
 
+.outer-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #F3F3F4;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.favorites_card:last-child {
+    position: relative
+}
+
+.ellipse {
+    position: absolute;
+    top: 128px;
+    left: 276px;
+}
+
+.destinations_container {
+   margin: 120px 105px;
+}
+
+
+.destinations_title {
+    margin-bottom: 105px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+
+.destinations_button {
+    border: unset;
+    height: 64px;
+    width: 192px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.destinations_btn-group {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.destinations_button:last-child {
+    width: 240px;
+    border-radius: 0 8px 8px 0;
+}
+
+.destinations_button:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.destinations_button:last-child:before {
+   content: "Places of interest";
+}
+
+.destinations_button:hover {
+    background-color: #3077C6;
+    color: #FFFFFF;
+}
+
+
+.destinations_row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 15px;
+}
+
+.destinations_card {
+    grid-column: span 3;
+}
+
+.destinations_caption {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3077C6;
+    margin-bottom: 48px;
+
+}
+
+.destinations_img {
+    margin-bottom: 25px;
+}
+
+.destinations_row {
+    position: relative;
+    margin-bottom: 210px;
+}
+
+.destinations_ellipse {
+    position: absolute;
+    top: 400px;
+    left: 595px;
+}
+
+.signUp_container {
+    background: #EAF0F9;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0 55px 25px;
+    gap: 24px;
+}
+
+.signUp_title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #383838;
+    margin-bottom: 20px;
+}
+
+.signUp_button {
+    width: 128px;
+    height: 48px;
+    background-color: #FFFFFF;
+    color: #3077C6;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #3077C6;
+    border-radius: 8px;
+}
+
+.outer-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86px;
+    height: 86px;
+    background-color: #F3F3F4;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
 .footer {
     background-color: #10367C;
     display: flex;
     flex-direction: column;
     padding: 120px 0;
+    margin-top: 120px;
 }
 
 .footer__container {
@@ -589,7 +732,7 @@ input:focus {
         line-height: 14px;
     }
 
-    .favorites_paragraph {
+    .favorites_caption {
         font-size: 12px;
         line-height: 14px;
         margin-top: 4px;
@@ -610,6 +753,70 @@ input:focus {
         display: none;
     }
 
+    .destinations_container {
+        margin: 40px 15px;
+    }
+
+    .destinations_title {
+        margin-bottom: 32px;
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .destinations_row {
+        grid-template-columns: repeat(6,1fr);
+        margin: 0;
+    }
+
+    .destinations_card {
+        grid-column: span 3;
+    }
+
+    .destinations_img {
+        width: 156px;
+        height: 156px;
+    }
+
+    .destinations_caption {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 0;
+    }
+
+    .destinations_btn-group {
+        gap: 16px;
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+
+    .destinations_button {
+        height: 32px;
+        font-size: 19px;
+        line-height: 22px;
+        border-radius: 8px;
+    }
+
+    .destinations_button:last-child {
+        width: 98px;
+        border-radius: 8px;
+    }
+
+    .destinations_button:first-child {
+        border-radius: 8px;
+    }
+
+    .destinations_button:last-child:before {
+        content: "Places";
+    }
+
+    .norway, .island {
+        display: none;
+    }
+
+    .signUp {
+    display: none;
+    }
+
     .footer__subtitle {
         display: none;
     }
@@ -624,6 +831,7 @@ input:focus {
         padding: 0;
         display: flex;
         flex-direction: column;
+        margin-top: 0;
     }
 
     .footer__container {
