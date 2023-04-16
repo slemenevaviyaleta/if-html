@@ -336,6 +336,10 @@ input:focus {
     line-height: 28px;
 }
 
+.favorites_link:hover {
+    opacity: 0.7;
+}
+
 .favorites_img {
     margin-bottom: 24px;
 }
@@ -427,13 +431,17 @@ input:focus {
     grid-column: span 3;
 }
 
-.destinations_caption {
+.destinations_link {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     color: #3077C6;
     margin-bottom: 48px;
+    text-decoration: none;
+}
 
+.destinations_link:hover {
+    opacity: 0.7;
 }
 
 .destinations_img {
@@ -475,6 +483,11 @@ input:focus {
     line-height: 21px;
     border: 1px solid #3077C6;
     border-radius: 8px;
+}
+
+.signUp_button:hover{
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .outer-circle {
@@ -757,7 +770,7 @@ input:focus {
         height: 156px;
     }
 
-    .destinations_caption {
+    .destinations_link {
         font-size: 12px;
         line-height: 14px;
         margin-bottom: 0;
