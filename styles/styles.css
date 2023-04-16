@@ -640,64 +640,62 @@ input:focus {
         display: inline;
     }
 
-    .offer__card {
-        margin: 0 auto;
-        padding-bottom: 32px;
-        text-align: center;
-        display: block;
-        padding-right: 0;
-    }
-
-    .offer__card:last-child {
-        padding-bottom: 0;
+    .offer__container {
+        margin: 24px 73px 40px;
     }
 
     .offer__title {
-        margin-top: 24px;
         margin-bottom: 32px;
-    }
-
-    .figure {
-        display: inline;
-    }
-
-    .offer__svg {
-        padding-bottom: 22px;
-    }
-
-    .headphones_svg {
-        width: 53px;
-        height: 64px;
-    }
-
-    .messages_svg {
-        width: 58px;
-        height: 58px;
-    }
-
-    .computer_svg {
-        width: 70px;
-        height: 47px;
-    }
-
-    .like_svg {
-        width: 64px;
-        height: 58px;
-    }
-
-    .offer__subtitle {
-        font-size: 15px;
-        line-height: 18px;
-    }
-
-    .offer__title {
         font-size: 28px;
         line-height: 33px;
     }
 
-    .offer__row {
-        margin-bottom: 40px;
+
+    .offer__title:after{
+        display: none;
     }
+
+    .offer__row {
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 32px;
+    }
+
+    .offer_card {
+        grid-column: span 6;
+        height: 104px;
+    }
+
+    .offer_img {
+        margin-bottom: 0;
+        padding-bottom: 22px;
+    }
+
+    .headphones {
+        width: 53px;
+        height: 64px;
+    }
+
+    .messages {
+        width: 58px;
+        height: 58px;
+    }
+
+    .computer {
+        width: 70px;
+        height: 47px;
+    }
+
+    .like {
+        width: 64px;
+        height: 58px;
+    }
+
+    .offer_caption {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
 
     .favorites_container {
         padding: 40px 0;
