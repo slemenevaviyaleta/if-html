@@ -185,25 +185,23 @@ body {
     margin-bottom: 24px;
 }
 
-.form {
-    height: 64px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    margin-bottom: 120px;
+
+.main_search-form {
+    background-color: #FFFFFF
 }
 
-.form__input {
+.main_input {
     height: 56px;
     border: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    padding-left: 23px;
     padding-top: 5px;
     cursor: pointer;
 }
 
-.form__button {
+
+.main_button {
     border: none;
     background: #3077C6;
     color: var(--text-color);
@@ -216,31 +214,42 @@ body {
     text-align: center;
 }
 
-.destination {
-    width: 443px;
-    border-radius: 8px;
+.destination-lg {
+    width: 467px;
 }
 
-.date {
-    width: 236px;
+.date-lg {
+    width: 259px;
 }
 
-.people {
-    width: 285px;
+.people-lg {
+    width: 314px;
 }
 
-input:focus {
-    outline: none;
+.destination-sm {
+    display: none
 }
 
-.checkout {
+.checkin-sm {
+    display: none
+}
+
+.checkout-sm {
+    display: none
+}
+
+.people-sm {
+    display: none
+}
+
+.main_input::placeholder {
+    padding: 24px;
+}
+
+.flex {
     display: none;
 }
 
-.date:hover {
-    border: 3px solid var(--border-color);
-    border-radius: 8px;
-}
 
 .download {
     display: flex;
@@ -276,7 +285,7 @@ input:focus {
 
 .offer__row {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .offer_card {
@@ -294,6 +303,7 @@ input:focus {
 .computer {
     margin-top: 15px;
 }
+
 .offer_caption {
     text-align: center;
     font-weight: 400;
@@ -374,7 +384,7 @@ input:focus {
 }
 
 .destinations_container {
-   margin: 120px 105px;
+    margin: 120px 105px;
 }
 
 
@@ -411,7 +421,7 @@ input:focus {
 }
 
 .destinations_button:last-child:before {
-   content: "Places of interest";
+    content: "Places of interest";
 }
 
 .destinations_button:hover {
@@ -485,7 +495,7 @@ input:focus {
     border-radius: 8px;
 }
 
-.signUp_button:hover{
+.signUp_button:hover {
     opacity: 0.7;
     cursor: pointer;
 }
@@ -653,6 +663,63 @@ input:focus {
         display: inline;
     }
 
+    .main {
+        margin-bottom: 32px;
+    }
+
+    .main_search-form {
+        background-color: unset;
+        margin: 0 auto;
+        width: 312px;
+        border: #F5BD41 8px solid;
+    }
+
+    .main_input {
+        font-size: 15px;
+        line-height: 18px;
+        color: #383838;
+        border-bottom: #F5BD41 8px solid;
+    }
+
+    .main_button {
+        position: static;
+        border-radius: unset;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .destination-lg {
+        display: none
+    }
+
+    .date-lg {
+        display: none
+    }
+
+    .people-lg {
+        display: none
+    }
+
+    .destination-sm {
+        display: block;
+    }
+
+    .checkin-sm {
+        display: inline;
+        border-right: #F5BD41 8px solid
+    ;
+    }
+
+    .checkout-sm {
+        display: inline;
+    }
+
+    .people-sm {
+        display: block;
+    }
+
     .offer__container {
         margin: 24px 73px 40px;
     }
@@ -664,13 +731,13 @@ input:focus {
     }
 
 
-    .offer__title:after{
+    .offer__title:after {
         display: none;
     }
 
     .offer__row {
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         gap: 32px;
     }
 
@@ -757,7 +824,7 @@ input:focus {
     }
 
     .destinations_row {
-        grid-template-columns: repeat(6,1fr);
+        grid-template-columns: repeat(6, 1fr);
         margin: 0;
     }
 
@@ -807,7 +874,7 @@ input:focus {
     }
 
     .signUp {
-    display: none;
+        display: none;
     }
 
     .footer__subtitle {
