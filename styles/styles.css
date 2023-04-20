@@ -578,6 +578,113 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.reviews_container {
+    margin: 120px auto;
+}
+
+.reviews_title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 105px;
+}
+
+.reviews_title-phone {
+    display: none;
+}
+
+.reviews_row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+.reviews_card {
+    grid-column: span 4;
+    background-color: #EAF0F9;
+}
+
+.reviews_card_wrapper {
+    padding: 24px 24px;
+}
+
+.reviews_description {
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: space-between;
+}
+
+.reviews_score {
+    display: grid;
+}
+
+.reviews_account {
+    display: flex;
+    margin-bottom: 13px;
+    gap: 21px;
+    padding: 5px 0 5px 5px;
+}
+
+.reviews_hotel {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3077C6;
+    margin-bottom: 16px;
+}
+
+.reviews_location {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3077C6;
+}
+
+.reviews_rating {
+    background: #10367C;
+    border-radius: 8px;
+    height: 32px;
+    width: 48px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 8px;
+    justify-self: end;
+}
+
+.reviews_amount {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BFBFBF;
+}
+
+.reviews_name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #383838;
+    margin-bottom: 8px;
+}
+
+.review_citizenship {
+    font-size: 18px;
+    line-height: 21px;
+    color: #BFBFBF;
+
+}
+
+.reviews_review {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #383838;
+    white-space: pre-line;
+}
+
 
 .footer {
     background-color: #10367C;
@@ -941,6 +1048,133 @@ body {
     .signUp {
         display: none;
     }
+
+    .reviews_container {
+        padding: 40px 0;
+        margin: 0;
+        background-color: #EAF0F9;
+    }
+
+    .reviews_title {
+        display: none;
+    }
+
+    .reviews_title-phone {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        margin-bottom: 32px;
+    }
+
+
+    .reviews_card {
+        display: none;
+    }
+
+    .reviews_card:first-child {
+        display: inline;
+    }
+
+    .reviews_row {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .reviews_card {
+        padding: 0 18px 0 16px;
+        grid-column: span 6;
+    }
+
+    .reviews_card_wrapper {
+        margin: 0 auto;
+    }
+
+    .reviews_img {
+        width: 327px;
+        height: 325px;
+    }
+
+    .reviews_card_wrapper {
+        padding: 0;
+    }
+
+    .reviews_description {
+        display: flex;
+        margin: 12px 0;
+        justify-content: space-between;
+    }
+
+    .reviews_score {
+        display: grid;
+    }
+
+    .reviews_account {
+        display: flex;
+        margin-bottom: 16px;
+        gap: 8px;
+        padding: 4px 0 5px 4px;
+    }
+
+    .reviews_hotel {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #3077C6;
+        margin-bottom: 8px;
+    }
+
+    .reviews_location {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #3077C6;
+    }
+
+    .reviews_rating {
+        background: #10367C;
+        border-radius: 8px;
+        width: 40px;
+        height: 26px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 5px;
+        justify-self: end;
+    }
+
+    .reviews_amount {
+        font-size: 12px;
+        line-height: 14px;
+        color: #BFBFBF;
+    }
+
+    .reviews_name {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #383838;
+        margin-bottom: 4px;
+    }
+
+    .review_citizenship {
+        font-size: 15px;
+        line-height: 18px;
+        color: #BFBFBF;
+
+    }
+
+    .reviews_review {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #383838;
+        white-space: pre-line;
+    }
+
 
     .footer__subtitle {
         display: none;
