@@ -187,17 +187,29 @@ body {
 
 
 .main_search-form {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    border-radius: 8px;
 }
 
 .main_input {
     height: 56px;
-    border: none;
+    border: unset;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     padding-top: 5px;
     cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+}
+
+.main_input::placeholder {
+    padding: 24px;
+}
+
+.main_input:hover {
+    outline: 8px solid #F5BD41;
+    margin-right: 3px;
 }
 
 
@@ -207,11 +219,15 @@ body {
     color: var(--text-color);
     position: absolute;
     width: 193px;
-    height: 64px;;
+    height: 61px;
     border-radius: 8px;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
+}
+
+.main_button:hover {
+    opacity: 0.9;
 }
 
 .destination-lg {
@@ -227,23 +243,28 @@ body {
 }
 
 .destination-sm {
-    display: none
+    display: none;
 }
 
 .checkin-sm {
-    display: none
+    display: none;
 }
 
 .checkout-sm {
-    display: none
+    display: none;
 }
 
 .people-sm {
-    display: none
+    display: none;
 }
 
 .main_input::placeholder {
     padding: 24px;
+}
+
+.main_input:hover {
+    outline: 3px solid #F5BD41;
+    margin-right: 3px;
 }
 
 .flex {
@@ -255,7 +276,7 @@ body {
     display: flex;
     gap: 13px;
     padding-bottom: 120px;
-    padding-left: 580px
+    padding-left: 580px;
 }
 
 .offer__container {
@@ -374,7 +395,7 @@ body {
 }
 
 .favorites_card:last-child {
-    position: relative
+    position: relative;
 }
 
 .ellipse {
@@ -458,6 +479,52 @@ body {
     margin-bottom: 25px;
 }
 
+.destinations_hover {
+    display: none;
+    background: #FFFFFF;
+    border: 1px solid #3077C6;
+    border-radius: 8px;
+    width: 128px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #3077C6;
+}
+
+.island:hover + .destinations_hover {
+    display: inline-block;
+    position: absolute;
+    top: 124px;
+    left: 1020px;
+}
+
+.norway:hover + .destinations_hover {
+    display: inline-block;
+    position: absolute;
+    top: 124px;
+    left: 708px;
+}
+
+.spain:hover + .destinations_hover {
+    display: inline-block;
+    position: absolute;
+    top: 124px;
+    left: 394px;
+}
+
+.maldives:hover + .destinations_hover {
+    display: inline-block;
+    position: absolute;
+    top: 124px;
+    left: 84px;
+}
+
+
+.destinations_img:hover {
+    box-shadow: 0 4px 70px 0 #383838;
+}
+
 .destinations_row {
     position: relative;
     margin-bottom: 210px;
@@ -517,7 +584,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 120px 0;
-    margin-top: 120px;
 }
 
 .footer__container {
@@ -708,8 +774,7 @@ body {
 
     .checkin-sm {
         display: inline;
-        border-right: #F5BD41 8px solid
-    ;
+        border-right: #F5BD41 8px solid;
     }
 
     .checkout-sm {
