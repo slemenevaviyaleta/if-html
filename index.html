@@ -1,10 +1,12 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 7</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/hotel-81/187/03-512.png">
+
 </head>
 <body>
 <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg">
@@ -35,6 +37,11 @@
     <symbol id="account" viewBox="0 0 40 40">
         <path fill="#fff"
               d="M20 0a20 20 0 1 0 0 40 20 20 0 0 0 0-40Zm0 6a6 6 0 1 1 0 12 6 6 0 0 1 0-12Zm0 28.4c-5 0-9.4-2.6-12-6.4 0-4 8-6.2 12-6.2S32 24 32 28c-2.6 3.8-7 6.4-12 6.4Z"/>
+        <symbol id="menu" viewBox="0 0 24 16">
+            <path fill="white"
+                  d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z"/>
+        </symbol>
+
     </symbol>
     <symbol id="google" viewBox="135 40">
         <path fill="#000" d="M130 40H5a5 5 0 0 1-5-5V5a5 5 0 0 1 5-5h125a5 5 0 0 1 5 5v30a5 5 0 0 1-5 5Z"/>
@@ -149,24 +156,30 @@
                     <use href="#logo"></use>
                 </svg>
             </div>
-            <div class="header__menu">
+            <div class="header__menu col-sm-3">
                 <a href="#!" class="header__link stays">
                     Stays
                 </a>
                 <a href="#!" class="header__link attractions">
                     Attractions
                 </a>
-                <a href="#!" class="header__link">
+                <a href="#!" class="header__link night">
                     <svg class="svg-night">
                         <use href="#night"></use>
                     </svg>
                 </a>
-                <a href="#!" class="header__link">
+                <a href="#!" class="header__link account">
                     <svg class="svg-account">
                         <use href="#account"></use>
                     </svg>
                 </a>
+                <a href="#!" class="header__link">
+                    <svg class="svg-menu">
+                        <use href="#menu"></use>
+                    </svg>
+                </a>
             </div>
+
         </nav>
 
         <section class="main">
@@ -177,14 +190,14 @@
                 <p>Check-in — Check-out</p>
             </div>
             <div class="main__form">
-                <form action="" class="form">
-                    <label class="form__label">
+                <div class="form_container">
+                    <form action="" class="form">
                         <input type="text" class="form__input destination" placeholder="New York">
                         <input type="text" class="form__input date" placeholder="Tue 15 Sept — Sat 19 Sept">
                         <input type="text" class="form__input people" placeholder="2 Adults — 0 Children — 1 Room">
-                        <button class="form__button">Search</button>
-                    </label>
-                </form>
+                        <button class="form__button" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </section>
     </div>
@@ -213,7 +226,7 @@
             <figure class="figure">
                 <div class="offer__card headphones col-lg-3 col-sm-4 ">
                     <img
-                            src="styles/images/headphones.svg"
+                            src="./images/headphones.svg"
                             alt="headphones"
                             class="offer__svg headphones_svg"
                     />
@@ -223,7 +236,7 @@
                 </div>
                 <div class="offer__card messages col-lg-3 col-sm-4">
                     <img
-                            src="styles/images/messages.svg"
+                            src="./images/messages.svg"
                             alt="messages"
                             class="offer__svg messages_svg"
                     />
@@ -233,7 +246,7 @@
                 </div>
                 <div class="offer__card computer col-lg-3 col-sm-4">
                     <img
-                            src="styles/images/computer.svg"
+                            src="./images/computer.svg"
                             alt="computer"
                             class="offer__svg computer_svg"
                     />
@@ -243,7 +256,7 @@
                 </div>
                 <div class="offer__card like col-lg-3 col-sm-4">
                     <img
-                            src="styles/images/like.svg"
+                            src="./images/like.svg"
                             alt="like"
                             class="offer__svg like_svg"/>
                     <figcaption>
@@ -252,6 +265,35 @@
                 </div>
             </figure>
         </div>
+    </div>
+</section>
+
+<section class="favorites">
+    <div class="favorites_container">
+        <h2 class="favorites_title">Homes guests loves</h2>
+        <div class="favorites_row">
+            <div class="favorites_card">
+                <img src="images/leopold.png" class="favorites_img" alt="hotel">
+                <a href="#" class="favorites_link">Hotel Leopold</a>
+                <p class="favorites_paragraph">Saint Petersburg, Russia</p>
+            </div>
+            <div class="favorites_card">
+                <img src="images/sunshine.png" class="favorites_img" alt="apartment">
+                <a href="#" class="favorites_link">Apartment Sunshine</a>
+                <p class="favorites_paragraph">Santa  Cruz de Tenerife, Spain</p>
+            </div>
+            <div class="favorites_card kunerad">
+                <img src="images/kunerad.png" class="favorites_img" alt="villa">
+                <a href="#" class="favorites_link">Villa Kunerad</a>
+                <p class="favorites_paragraph">Vysokie Tatry, Slowakia</p>
+            </div>
+            <div class="favorites_card friendship">
+                <img src="images/friendship.png" class="favorites_img" alt="hostel">
+                <a href="#" class="favorites_link">Hostel Friendship</a>
+                <p class="favorites_paragraph">Berlin, Germany</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
