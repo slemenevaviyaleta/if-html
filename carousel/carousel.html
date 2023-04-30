@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 7</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="carousel.css">
     <link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/hotel-81/187/03-512.png">
-<!--    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">-->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 </head>
 <body>
 <header class="header ">
@@ -40,7 +40,6 @@
                     </svg>
                 </a>
             </div>
-
         </nav>
 
         <section class="main">
@@ -124,38 +123,36 @@
 </section>
 
 <div class="favorites_container">
-    <h2 class="favorites_title">Homes guests loves</h2>
-    <div class="favorites_row">
-        <div class="favorites_card">
-            <img src="images/leopold.png" class="favorites_img" alt="hotel">
-            <a href="#" class="favorites_link">Hotel Leopold</a>
-            <p class="favorites_caption">Saint Petersburg, Russia</p>
-        </div>
-        <div class="favorites_card">
-            <img src="images/sunshine.png" class="favorites_img" alt="apartment">
-            <a href="#" class="favorites_link">Apartment Sunshine</a>
-            <p class="favorites_caption">Santa Cruz de Tenerife, Spain</p>
-        </div>
-        <div class="favorites_card kunerad">
-            <img src="images/kunerad.png" class="favorites_img" alt="villa">
-            <a href="#" class="favorites_link">Villa Kunerad</a>
-            <p class="favorites_caption">Vysokie Tatry, Slowakia</p>
-        </div>
-        <div class="favorites_card friendship">
-            <div class="card-ellipse">
-                <img src="images/friendship.png" class="favorites_img" alt="hostel">
-            </div>
-            <a href="#" class="favorites_link">Hostel Friendship</a>
-            <p class="favorites_caption">Berlin, Germany</p>
-        </div>
-        <div class="favorites_ellipse">
-            <div class="favorites_outer-circle">
-                <div class="svg-profile">
-                    <img src='images/arrow.svg'>
+    <main class="page">
+        <h2 class="favorites_title">Homes guests loves</h2>
+            <section class="splide gallery" aria-label="gallery">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="images/leopold.png">
+                            <a href="#" class="favorites_link">Hotel Leopold</a>
+                            <p class="favorites_caption">Saint Petersburg, Russia</p>
+
+                        </li>
+                        <li class="splide__slide">
+                            <img src="images/sunshine.png">
+                            <a href="#" class="favorites_link">Apartment Sunshine</a>
+                            <p class="favorites_caption">Santa Cruz de Tenerife, Spain</p>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="images/kunerad.png">
+                            <a href="#" class="favorites_link">Villa Kunerad</a>
+                            <p class="favorites_caption">Vysokie Tatry, Slowakia</p>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="images/friendship.png">
+                            <a href="#" class="favorites_link">Hostel Friendship</a>
+                            <p class="favorites_caption">Berlin, Germany</p>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
+    </main>
 </div>
 
 
@@ -246,7 +243,9 @@
                             <p class="reviews_citizenship">🇺🇦 Ukraine</p>
                         </div>
                     </div>
-                    <p class="reviews_review">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.
+                    <p class="reviews_review">Great location, really pleasant and clean rooms, but the thing that makes
+                        this such a good place to stay are the staff. All of the people are incredibly helpful and
+                        generous with their time and advice.
                     </p>
                 </div>
                 <div class="dots_wrapper">
@@ -281,8 +280,10 @@
                             <p class="reviews_citizenship">🇺🇸 USA</p>
                         </div>
                     </div>
-                    <p class="reviews_review america">I've been in this hostel for a month and here is the best hostel of all
-                        Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
+                    <p class="reviews_review america">I've been in this hostel for a month and here is the best hostel
+                        of all
+                        Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and
+                        excellent
                         Most importantly, those who work here are kind and good-natured.
                     </p>
                 </div>
@@ -312,7 +313,9 @@
                             <p class="reviews_citizenship">🇩🇪 Germany</p>
                         </div>
                     </div>
-                    <p class="reviews_review">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.
+                    <p class="reviews_review">Efficient, friendly, professional, and appropriately attentive. Great
+                        hotel in a great location. Easy access to all the surrounding historical sites. Staff is
+                        fantastic. Will definitely stay at this location during my next stay in Marocco.
                     </p>
                     <div class="reviews_ellipse">
                         <div class="reviews_outer-circle">
@@ -369,7 +372,21 @@
     </div>
     <p class="footer__paragraph">© 2022Triphouse, Inc. All rights reserved</p>
 </footer>
-<!--*/<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>-->
-<!--<script src="js/script.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+<script>
+    const splide = new Splide('.gallery', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        perPage: 3,
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: 2,
+        },
+    });
+    splide.mount(window.splide.Extensions);
+</script>
 </body>
 </html>
