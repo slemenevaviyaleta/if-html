@@ -948,10 +948,6 @@ body {
     }
 
     .form-sm {
-        display: inline;
-    }
-
-    .top-section__form-sm {
         display: grid;
         gap: 8px;
         margin-bottom: 32px;
