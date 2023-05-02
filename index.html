@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 7</title>
+    <title>TripHouse</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/hotel-81/187/03-512.png">
-<!--    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">-->
+    <!--    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">&ndash;&gt;-->
 </head>
 <body>
+<!--Header-->
 <header class="header ">
     <div class="header__container col-lg-12 col-sm-6">
         <nav class="header__navbar">
@@ -40,35 +41,124 @@
                     </svg>
                 </a>
             </div>
-
         </nav>
 
-        <section class="main">
-            <h1 class="main__title">Discover stays
+        <!--        Top-section-->
+
+        <section class="top-section">
+            <h1 class="top-section__title">Discover stays
                 to live, work or just relax</h1>
-            <div class="main__subtitles">
+            <div class="top-section__subtitles">
                 <p>Your destination or hotel name</p>
                 <p>Check-in — Check-out</p>
             </div>
 
-
-            <form class="main_search-form col-lg-12 col-sm-6">
-                <input class="main_input destination-lg col-sm-6" type="text" placeholder="New York"><input
-                    class="main_input date-lg col-sm-6" type="text" placeholder="Tue 15 Sept — Sat 19 Sept"><input
-                    class="main_input people-lg col-sm-6" type="text" placeholder="2 Adults — 0 Children — 1 Room">
-                <input class="main_input destination-sm col-sm-6" type="text"
-                       placeholder="Your destination or hotel name">
-                <div class="flex"><input class="main_input checkin-sm col-sm-3" type="text"
-                                         placeholder="Tue 15 Sept 2020"><input class="main_input checkout-sm col-sm-3"
-                                                                               type="text"
-                                                                               placeholder="Sat 19 Sept 2020"></div>
-                <input class="main_input people-sm col-sm-6" type="text" placeholder="Adults  Children  Room">
-                <button class="main_button col-sm-6">Search</button>
+            <!--    Desktop form-->
+            <form class="top-section__form form">
+                <div class="form__field form__field-destination">
+                    <input
+                            class="form__input form__input-destination"
+                            type="text"
+                            name="city"
+                            placeholder="New York"
+                    />
+                </div>
+                <div class="form__field form__field-date">
+                    <input
+                            class="form__input form__input-date"
+                            type="text"
+                            name="date"
+                            placeholder="Tue 15 Sept - Sat 19 Sept"
+                    />
+                </div>
+                <div class="form__field form__field-people">
+                    <input
+                            class="form__input form__input-people"
+                            type="text"
+                            name="guests"
+                            placeholder="2 Adults —0 Children — 1 Room"
+                    />
+                </div>
+                <button class="form__btn" type="submit">Search</button>
             </form>
 
+            <!--Mobile form-->
+            <form class="top-section__form-sm form-sm col-sm-6">
+                <label class="form-sm__label form-sm__label-destination">
+                    <input
+                            class="form__input form__input-destination"
+                            type="text"
+                            name="destination-sm"
+                            placeholder="Your destination or hotel name"
+                    />
+                </label>
 
+                <label
+                        class="form-sm__label form-sm__label-check-in"
+                        content="Check-in"
+                >
+                    <input
+                            class="form__input form__input-check-in"
+                            type="text"
+                            name="check-in"
+                            placeholder="Tue 15 Sept 2020"
+                    />
+                </label>
+
+                <label
+                        class="form-sm__label form-sm__label-check-out"
+                        content="Check-out"
+                >
+                    <input
+                            class="form__input form__input-check-out"
+                            type="text"
+                            id="check-out"
+                            name="check-out"
+                            placeholder="Sat 19 Sept 2020"
+                    />
+                </label>
+                <div class="form__grid-row">
+                    <label
+                            class="form-sm__label form-sm__label-adults"
+                            content="Adults"
+                    >
+                        <input
+                                class="form__input form__input-adults"
+                                type="text"
+                                id="adults"
+                                name="adults"
+                                placeholder="2"
+                        />
+                    </label>
+                    <label
+                            class="form-sm__label form-sm__label-children"
+                            content="Children"
+                    >
+                        <input
+                                class="form__input form__input-children"
+                                type="text"
+                                id="children"
+                                name="children"
+                                placeholder="0"
+                        />
+                    </label>
+                    <label class="form-sm__label form-sm__label-rooms" content="Rooms">
+                        <input
+                                class="form__input form__input-rooms"
+                                type="text"
+                                id="rooms"
+                                name="rooms"
+                                placeholder="1"
+                        />
+                    </label>
+                </div>
+                <button class="form-sm__btn col-sm-6">Search</button>
+            </form>
         </section>
     </div>
+
+    <!--    Download buttons-->
+
     <section class="download">
         <div class="download__google">
             <a href="#!" class="download__button">
@@ -86,6 +176,8 @@
         </div>
     </section>
 </header>
+
+<!--Offer section-->
 
 <section class="offer">
     <div class="offer__container">
@@ -123,30 +215,32 @@
     </div>
 </section>
 
+<!--Favorites-->
+
 <div class="favorites_container">
     <h2 class="favorites_title">Homes guests loves</h2>
     <div class="favorites_row">
         <div class="favorites_card">
             <img src="images/leopold.png" class="favorites_img" alt="hotel">
             <a href="#" class="favorites_link">Hotel Leopold</a>
-            <p class="favorites_caption">Saint Petersburg, Russia</p>
+            <p class="favorites__caption">Saint Petersburg, Russia</p>
         </div>
         <div class="favorites_card">
             <img src="images/sunshine.png" class="favorites_img" alt="apartment">
             <a href="#" class="favorites_link">Apartment Sunshine</a>
-            <p class="favorites_caption">Santa Cruz de Tenerife, Spain</p>
+            <p class="favorites__caption">Santa Cruz de Tenerife, Spain</p>
         </div>
         <div class="favorites_card kunerad">
             <img src="images/kunerad.png" class="favorites_img" alt="villa">
             <a href="#" class="favorites_link">Villa Kunerad</a>
-            <p class="favorites_caption">Vysokie Tatry, Slowakia</p>
+            <p class="favorites__caption">Vysokie Tatry, Slowakia</p>
         </div>
         <div class="favorites_card friendship">
             <div class="card-ellipse">
                 <img src="images/friendship.png" class="favorites_img" alt="hostel">
             </div>
             <a href="#" class="favorites_link">Hostel Friendship</a>
-            <p class="favorites_caption">Berlin, Germany</p>
+            <p class="favorites__caption">Berlin, Germany</p>
         </div>
         <div class="favorites_ellipse">
             <div class="favorites_outer-circle">
@@ -158,6 +252,42 @@
     </div>
 </div>
 
+<!--Favorites carousel-->
+
+<!--<div class="favorites_container">-->
+<!--    <main class="page">-->
+<!--        <h2 class="favorites_title">Homes guests loves</h2>-->
+<!--            <section class="splide gallery" aria-label="gallery">-->
+<!--                <div class="splide__track">-->
+<!--                    <ul class="splide__list">-->
+<!--                        <li class="splide__slide">-->
+<!--                            <img src="images/leopold.png">-->
+<!--                            <a href="#" class="favorites_link">Hotel Leopold</a>-->
+<!--                            <p class="favorites__caption">Saint Petersburg, Russia</p>-->
+
+<!--                        </li>-->
+<!--                        <li class="splide__slide">-->
+<!--                            <img src="images/sunshine.png">-->
+<!--                            <a href="#" class="favorites_link">Apartment Sunshine</a>-->
+<!--                            <p class="favorites__caption">Santa Cruz de Tenerife, Spain</p>-->
+<!--                        </li>-->
+<!--                        <li class="splide__slide">-->
+<!--                            <img src="images/kunerad.png">-->
+<!--                            <a href="#" class="favorites_link">Villa Kunerad</a>-->
+<!--                            <p class="favorites__caption">Vysokie Tatry, Slowakia</p>-->
+<!--                        </li>-->
+<!--                        <li class="splide__slide">-->
+<!--                            <img src="images/friendship.png">-->
+<!--                            <a href="#" class="favorites_link">Hostel Friendship</a>-->
+<!--                            <p class="favorites__caption">Berlin, Germany</p>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </section>-->
+<!--    </main>-->
+<!--</div>-->
+
+<!--Destinations -->
 
 <section class="destinations">
     <div class="destinations_container">
@@ -199,6 +329,8 @@
     </div>
 </section>
 
+<!--Desktop Sign Up-->
+
 <section class="signUp">
     <div class="signUp_container col-lg-12 col-sm-6">
         <div class="signUp_ellipse">
@@ -215,6 +347,8 @@
         </div>
     </div>
 </section>
+
+<!--Reviews-->
 
 <section class="reviews">
     <div class="reviews_container col-lg-12 col-sm-6">
@@ -246,7 +380,9 @@
                             <p class="reviews_citizenship">🇺🇦 Ukraine</p>
                         </div>
                     </div>
-                    <p class="reviews_review">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.
+                    <p class="reviews_review">Great location, really pleasant and clean rooms, but the thing that makes
+                        this such a good place to stay are the staff. All of the people are incredibly helpful and
+                        generous with their time and advice.
                     </p>
                 </div>
                 <div class="dots_wrapper">
@@ -281,8 +417,10 @@
                             <p class="reviews_citizenship">🇺🇸 USA</p>
                         </div>
                     </div>
-                    <p class="reviews_review america">I've been in this hostel for a month and here is the best hostel of all
-                        Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
+                    <p class="reviews_review america">I've been in this hostel for a month and here is the best hostel
+                        of all
+                        Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and
+                        excellent
                         Most importantly, those who work here are kind and good-natured.
                     </p>
                 </div>
@@ -312,7 +450,9 @@
                             <p class="reviews_citizenship">🇩🇪 Germany</p>
                         </div>
                     </div>
-                    <p class="reviews_review">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.
+                    <p class="reviews_review">Efficient, friendly, professional, and appropriately attentive. Great
+                        hotel in a great location. Easy access to all the surrounding historical sites. Staff is
+                        fantastic. Will definitely stay at this location during my next stay in Marocco.
                     </p>
                     <div class="reviews_ellipse">
                         <div class="reviews_outer-circle">
@@ -327,6 +467,8 @@
     </div>
 </section>
 
+<!--Mobile Sign Up-->
+
 <section class="signUp-sm">
     <div class="signUp-sm_container col-sm-6">
         <img src="images/cross.svg" class="signUp-sm_cross">
@@ -339,6 +481,7 @@
     </div>
 </section>
 
+<!--Footer-->
 
 <footer class="footer">
     <svg class="footer_svg-logo">
@@ -369,7 +512,20 @@
     </div>
     <p class="footer__paragraph">© 2022Triphouse, Inc. All rights reserved</p>
 </footer>
-<!--*/<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>-->
-<!--<script src="js/script.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script><script>-->
+<!--    const splide = new Splide('.gallery', {-->
+<!--        type: 'loop',-->
+<!--        drag: 'free',-->
+<!--        focus: 'center',-->
+<!--        perPage: 3,-->
+<!--        arrows: false,-->
+<!--        pagination: false,-->
+<!--        autoScroll: {-->
+<!--            speed: 2,-->
+<!--        },-->
+<!--    });-->
+<!--    splide.mount(window.splide.Extensions);-->
+<!--</script>&ndash;&gt;-->
 </body>
 </html>
