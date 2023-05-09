@@ -2,180 +2,194 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="This is a TripHouse webpage about tourism"/>
+    <meta name="keywords" content="tourism, booking, vacation, hotels, apartments"/>
+    <meta name="author" content="Slemeneva Viyaleta"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripHouse</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/hotel-81/187/03-512.png">
-    <!--    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">&ndash;&gt;-->
 </head>
 <body>
 <!--Header-->
-<header class="header ">
-    <div class="header__container col-lg-12 col-sm-6">
-        <nav class="header__navbar">
-            <div class="header__logo">
-                <svg class="svg-logo">
-                    <use href="./images/sprite.svg#logo"/>
-                </svg>
-            </div>
-            <div class="header__menu col-sm-3">
-                <a href="#!" class="header__link stays">
-                    Stays
-                </a>
-                <a href="#!" class="header__link attractions">
-                    Attractions
-                </a>
-                <a href="#!" class="header__link night">
-                    <svg class="svg-night">
-                        <use href="./images/sprite.svg#night"/>
+<main class="main">
+    <div class="main__container">
+        <div class="header">
+            <nav class="header__navbar">
+                <div class="header__logo">
+                    <svg class="svg-logo">
+                        <use href="./images/sprite.svg#logo"/>
                     </svg>
-                </a>
-                <a href="#!" class="header__link account">
-                    <svg class="svg-account">
-                        <use href="./images/sprite.svg#account"/>
-                    </svg>
-                </a>
-                <a href="#!" class="header__link">
-                    <svg class="svg-menu">
-                        <use href="./images/sprite.svg#menu"/>
-                    </svg>
-                </a>
-            </div>
-        </nav>
-
-        <!--        Top-section-->
-
-        <section class="top-section">
-            <h1 class="top-section__title">Discover stays
-                to live, work or just relax</h1>
-            <div class="top-section__subtitles">
-                <p>Your destination or hotel name</p>
-                <p>Check-in — Check-out</p>
-            </div>
-
-            <!--    Desktop form-->
-            <form class="top-section__form form-lg">
-                <div class="form__field form__field-destination">
-                    <input
-                            class="form__input form__input-destination"
-                            type="text"
-                            name="city"
-                            placeholder="New York"
-                    />
                 </div>
-                <div class="form__field form__field-date">
-                    <input
-                            class="form__input form__input-date"
-                            type="text"
-                            name="date"
-                            placeholder="Tue 15 Sept - Sat 19 Sept"
-                    />
+                <div class="header__menu col-sm-3">
+                    <div class="header__menu-links">
+                        <a href="#!" class="header__link">
+                            Stays
+                        </a>
+                        <a href="#!" class="header__link">
+                            Attractions
+                        </a>
+                    </div>
+                    <div class="header__menu-buttons">
+                        <a href="#!" class="header__btn">
+                            <svg class="svg-night">
+                                <use href="./images/sprite.svg#night"/>
+                            </svg>
+                        </a>
+                        <a href="#!" class="header__btn">
+                            <svg class="svg-account">
+                                <use href="./images/sprite.svg#account"/>
+                            </svg>
+                        </a>
+                        <a href="#!" class="header__btn">
+                            <svg class="svg-menu">
+                                <use href="./images/sprite.svg#menu"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="form__field form__field-people">
-                    <input
-                            class="form__input form__input-people"
-                            type="text"
-                            name="guests"
-                            placeholder="2 Adults —0 Children — 1 Room"
-                    />
-                </div>
-                <button class="form__btn" type="submit">Search</button>
-            </form>
+            </nav>
 
-            <!--Mobile form-->
-            <form class="top-section__form-sm form-sm col-sm-6">
-                <label class="form-sm__label form-sm__label-destination">
-                    <input
-                            class="form__input form__input-destination"
-                            type="text"
-                            name="destination-sm"
-                            placeholder="Your destination or hotel name"
-                    />
-                </label>
+            <!--        Top-section-->
 
-                <label
-                        class="form-sm__label form-sm__label-check-in"
-                        content="Check-in"
-                >
-                    <input
-                            class="form__input form__input-check-in"
-                            type="text"
-                            name="check-in"
-                            placeholder="Tue 15 Sept 2020"
-                    />
-                </label>
+            <section class="top-section">
+                <h1 class="top-section__title">Discover stays
+                    to live, work or just relax</h1>
 
-                <label
-                        class="form-sm__label form-sm__label-check-out"
-                        content="Check-out"
-                >
-                    <input
-                            class="form__input form__input-check-out"
-                            type="text"
-                            id="check-out"
-                            name="check-out"
-                            placeholder="Sat 19 Sept 2020"
-                    />
-                </label>
-                <div class="form__grid-row">
+                <!--    Desktop form-->
+                <form class="top-section__form form-lg">
+                    <div class="form__field form__field-destination">
+                        <label
+                                class="form__label top-section__form__label"
+                                for="destination"
+                        >Your destination or hotel name</label>
+                        <input
+                                class="form__input form__input-destination"
+                                type="text"
+                                id="destination"
+                                name="city"
+                                placeholder="New York"
+                        />
+                    </div>
+                    <div class="form__field form__field-date">
+                        <label
+                                class="form__label top-section__form__label"
+                                for="date"
+                        >Check-in &mdash; Check-out</label>
+                        <input
+                                class="form__input form__input-date"
+                                type="text"
+                                id="date"
+                                name="date"
+                                placeholder="Tue 15 Sept - Sat 19 Sept"
+                        />
+                    </div>
+                    <div class="form__field form__field-people">
+                        <input
+                                class="form__input form__input-people"
+                                type="text"
+                                name="guests"
+                                placeholder="2 Adults —0 Children — 1 Room"
+                        />
+                    </div>
+                    <button class="form__btn" type="submit">Search</button>
+                </form>
+
+                <!--Mobile form-->
+                <form class="top-section__form-sm form-sm col-sm-6">
+                    <label class="form-sm__label form-sm__label-destination">
+                        <input
+                                class="form__input form__input-destination"
+                                type="text"
+                                name="destination-sm"
+                                placeholder="Your destination or hotel name"
+                        />
+                    </label>
+
                     <label
-                            class="form-sm__label form-sm__label-adults"
-                            content="Adults"
+                            class="form-sm__label form-sm__label-check-in"
+                            content="Check-in date"
                     >
                         <input
-                                class="form__input form__input-adults"
+                                class="form__input form__input-check-in"
                                 type="text"
-                                id="adults"
-                                name="adults"
-                                placeholder="2"
+                                name="check-in"
+                                placeholder="Tue 15 Sept 2020"
                         />
                     </label>
+
                     <label
-                            class="form-sm__label form-sm__label-children"
-                            content="Children"
+                            class="form-sm__label form-sm__label-check-out"
+                            content="Check-out date"
                     >
                         <input
-                                class="form__input form__input-children"
+                                class="form__input form__input-check-out"
                                 type="text"
-                                id="children"
-                                name="children"
-                                placeholder="0"
+                                id="check-out"
+                                name="check-out"
+                                placeholder="Sat 19 Sept 2020"
                         />
                     </label>
-                    <label class="form-sm__label form-sm__label-rooms" content="Rooms">
-                        <input
-                                class="form__input form__input-rooms"
-                                type="text"
-                                id="rooms"
-                                name="rooms"
-                                placeholder="1"
-                        />
-                    </label>
-                </div>
-                <button class="form-sm__btn col-sm-6">Search</button>
-            </form>
+                    <div class="form__grid-row">
+                        <label
+                                class="form-sm__label form-sm__label-adults"
+                                content="Adults"
+                        >
+                            <input
+                                    class="form__input form__input-adults"
+                                    type="text"
+                                    id="adults"
+                                    name="adults"
+                                    placeholder="2"
+                            />
+                        </label>
+                        <label
+                                class="form-sm__label form-sm__label-children"
+                                content="Children"
+                        >
+                            <input
+                                    class="form__input form__input-children"
+                                    type="text"
+                                    id="children"
+                                    name="children"
+                                    placeholder="0"
+                            />
+                        </label>
+                        <label class="form-sm__label form-sm__label-rooms" content="Rooms">
+                            <input
+                                    class="form__input form__input-rooms"
+                                    type="text"
+                                    id="rooms"
+                                    name="rooms"
+                                    placeholder="1"
+                            />
+                        </label>
+                    </div>
+                    <button class="form-sm__btn col-sm-6">Search</button>
+                </form>
+            </section>
+        </div>
+
+        <!--    Download buttons-->
+
+        <section class="download">
+            <div class="download__google">
+                <a href="#!" class="download__button">
+                    <div class="svg-google">
+                        <img src="images/google.svg">
+                    </div>
+                </a>
+            </div>
+            <div class="download__apple">
+                <a href="#!" class="download__button">
+                    <svg class="svg-apple">
+                        <use href="./images/sprite.svg#apple"/>
+                    </svg>
+                </a>
+            </div>
         </section>
     </div>
-
-    <!--    Download buttons-->
-
-    <section class="download">
-        <div class="download__google">
-            <a href="#!" class="download__button">
-                <div class="svg-google">
-                    <img src="images/google.svg">
-                </div>
-            </a>
-        </div>
-        <div class="download__apple">
-            <a href="#!" class="download__button">
-                <svg class="svg-apple">
-                    <use href="./images/sprite.svg#apple"/>
-                </svg>
-            </a>
-        </div>
-    </section>
-</header>
+</main>
 
 <!--Offer section-->
 
@@ -183,149 +197,126 @@
     <div class="offer__container">
         <h2 class="offer__title">What do we offer</h2>
         <div class="offer__row">
-            <div class="offer_card">
-                <svg class="offer_img svg-headphones">
+            <div class="offer__card">
+                <svg class="offer__img svg-headphones">
                     <use href="./images/sprite.svg#headphones"/>
                 </svg>
-                <p class="offer_caption">Support 24/7</p>
+                <p class="offer__caption">Support 24/7</p>
             </div>
 
-            <div class="offer_card">
-                <svg class="offer_img svg-messages">
+            <div class="offer__card">
+                <svg class="offer__img svg-messages">
                     <use href="./images/sprite.svg#messages"/>
                 </svg>
-                <p class="offer_caption">Communicate directly</p>
+                <p class="offer__caption">Communicate directly</p>
             </div>
 
-            <div class="offer_card">
-                <svg class="offer_img svg-computer">
+            <div class="offer__card">
+                <svg class="offer__img svg-computer">
                     <use href="./images/sprite.svg#computer"/>
                 </svg>
-                <p class="offer_caption">Book online</p>
+                <p class="offer__caption">Book online</p>
             </div>
 
-            <div class="offer_card">
-                <svg class="offer_img svg-like">
+            <div class="offer__card">
+                <svg class="offer__img svg-like">
                     <use href="./images/sprite.svg#like"/>
                 </svg>
-                <p class="offer_caption">Real guest reviews</p>
+                <p class="offer__caption">Real guest reviews</p>
             </div>
 
         </div>
     </div>
 </section>
 
-<!--Favorites carousel-->
-
-<!--<div class="favorites_container">-->
-<!--    <main class="page">-->
-<!--        <h2 class="favorites_title">Homes guests loves</h2>-->
-<!--            <section class="splide gallery" aria-label="gallery">-->
-<!--                <div class="splide__track">-->
-<!--                    <ul class="splide__list">-->
-<!--                        <li class="splide__slide">-->
-<!--                            <img src="images/leopold.png">-->
-<!--                            <a href="#" class="favorites_link">Hotel Leopold</a>-->
-<!--                            <p class="favorites__caption">Saint Petersburg, Russia</p>-->
-
-<!--                        </li>-->
-<!--                        <li class="splide__slide">-->
-<!--                            <img src="images/sunshine.png">-->
-<!--                            <a href="#" class="favorites_link">Apartment Sunshine</a>-->
-<!--                            <p class="favorites__caption">Santa Cruz de Tenerife, Spain</p>-->
-<!--                        </li>-->
-<!--                        <li class="splide__slide">-->
-<!--                            <img src="images/kunerad.png">-->
-<!--                            <a href="#" class="favorites_link">Villa Kunerad</a>-->
-<!--                            <p class="favorites__caption">Vysokie Tatry, Slowakia</p>-->
-<!--                        </li>-->
-<!--                        <li class="splide__slide">-->
-<!--                            <img src="images/friendship.png">-->
-<!--                            <a href="#" class="favorites_link">Hostel Friendship</a>-->
-<!--                            <p class="favorites__caption">Berlin, Germany</p>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </section>-->
-<!--    </main>-->
-<!--</div>-->
-
 <!--Favorites-->
 
-<div class="favorites_container">
-    <h2 class="favorites_title">Homes guests loves</h2>
-    <div class="favorites_row">
-        <div class="favorites_card">
-            <img src="images/leopold.png" class="favorites_img" alt="hotel">
-            <a href="#" class="favorites_link">Hotel Leopold</a>
-            <p class="favorites__caption">Saint Petersburg, Russia</p>
-        </div>
-        <div class="favorites_card">
-            <img src="images/sunshine.png" class="favorites_img" alt="apartment">
-            <a href="#" class="favorites_link">Apartment Sunshine</a>
-            <p class="favorites__caption">Santa Cruz de Tenerife, Spain</p>
-        </div>
-        <div class="favorites_card kunerad">
-            <img src="images/kunerad.png" class="favorites_img" alt="villa">
-            <a href="#" class="favorites_link">Villa Kunerad</a>
-            <p class="favorites__caption">Vysokie Tatry, Slowakia</p>
-        </div>
-        <div class="favorites_card friendship">
-            <div class="card-ellipse">
-                <img src="images/friendship.png" class="favorites_img" alt="hostel">
-            </div>
-            <a href="#" class="favorites_link">Hostel Friendship</a>
-            <p class="favorites__caption">Berlin, Germany</p>
-        </div>
-        <div class="favorites_ellipse">
-            <div class="favorites_outer-circle">
-                <div class="svg-profile">
-                    <img src='images/arrow.svg'>
-                </div>
-            </div>
+<section class="favorites">
+    <div class="favorites__container">
+        <h2 class="favorites__title">Homes guests loves</h2>
+        <div class="favorites__wrapper">
+            <ul class="favorites__row">
+                <li class="favorites__card">
+                    <img src="images/leopold.png" class="favorites__img" alt="hotel">
+                    <a href="#" class="favorites__link">Hotel Leopold</a>
+                    <p class="favorites__caption">Saint Petersburg, Russia</p>
+                    <a href="#" class='favorites__card-link'></a>
+                </li>
+                <li class="favorites__card">
+                    <img src="images/sunshine.png" class="favorites__img" alt="apartment">
+                    <a href="#" class="favorites__link">Apartment Sunshine</a>
+                    <p class="favorites__caption">Santa Cruz de Tenerife,
+                        Spain</p>
+                    <a href="#" class='favorites__card-link'></a>
+                </li>
+                <li class="favorites__card">
+                    <img src="images/kunerad.png" class="favorites__img" alt="villa">
+                    <a href="#" class="favorites__link">Villa Kunerad</a>
+                    <p class="favorites__caption">Vysokie Tatry, Slowakia</p>
+                    <a href="#" class='favorites__card-link'></a>
+                </li>
+                <li class="favorites__card">
+                    <img src="images/friendship.png" class="favorites__img" alt="hostel">
+                    <a href="#" class="favorites__link">Hostel Friendship</a>
+                    <p class="favorites__caption">Berlin, Germany</p>
+                    <a href="#" class='favorites__card-link'></a>
+                </li>
+            </ul>
+            <button aria-label="next" class="favorites__btn-ellipse">
+                <img src='images/arrow.svg' class="arrow-btn">
+            </button>
         </div>
     </div>
-</div>
-
+</section>
 
 <!--Destinations -->
 
 <section class="destinations">
-    <div class="destinations_container">
-        <h2 class="destinations_title">The best destinations</h2>
-        <div class="destinations_btn-group col-lg-12 col-sm-6">
-            <button class="destinations_button col-sm-2">Regions</button>
-            <button class="destinations_button col-sm-2">Cities</button>
-            <button class="destinations_button col-sm-2"></button>
+    <div class="destinations__container">
+        <h2 class="destinations__title">The best destinations</h2>
+        <div class="destinations__btn-group col-lg-12 col-sm-6">
+            <button class="destinations__button">Regions</button>
+            <button class="destinations__button">Cities</button>
+            <button class="destinations__button"></button>
         </div>
-        <div class="destinations_row">
-            <div class="destinations_card">
-                <img src="images/maldives.png" class="destinations_img maldives" alt="Maldives">
-                <button class="destinations_hover">Book now</button>
-                <a href="#" class="destinations_link">Maldives</a>
-            </div>
-            <div class="destinations_card">
-                <img src="images/spain.png" class="destinations_img spain" alt="Spain">
-                <button class="destinations_hover">Book now</button>
-                <a href="#" class="destinations_link">Spain</a>
-            </div>
-            <div class="destinations_card norway">
-                <img src="images/norway.png" class="destinations_img norway" alt="Norway">
-                <button class="destinations_hover">Book now</button>
-                <a href="#" class="destinations_link">Norway</a>
-            </div>
-            <div class="destinations_card island">
-                <img src="images/island.png" class="destinations_img island" alt="Island">
-                <button class="destinations_hover">Book now</button>
-                <a href="#" class="destinations_link">Island</a>
-            </div>
-            <div class="destinations_ellipse">
-                <div class="destinations_outer-circle">
-                    <div class="svg-profile">
-                        <img src='images/arrow%20down.svg'>
+        <div class="destinations__wrapper">
+            <ul class="destinations__row">
+                <li class="destinations__card">
+                    <div class="destinations__image-wrapper">
+                        <img src="images/maldives.png" class="destinations__img" alt="Maldives">
+                        <button class="destinations__hover">Book now</button>
                     </div>
-                </div>
-            </div>
+                    <a href="#" class="destinations__link">Maldives</a>
+                    <a href="#" class='destinations__card-link'></a>
+                </li>
+                <li class="destinations__card">
+                    <div class="destinations__image-wrapper">
+                        <img src="images/spain.png" class="destinations__img" alt="Spain">
+                        <button class="destinations__hover">Book now</button>
+                    </div>
+                    <a href="#" class="destinations__link">Spain</a>
+                    <a href="#" class='destinations__card-link'></a>
+                </li>
+                <li class="destinations__card">
+                    <div class="destinations__image-wrapper">
+                        <img src="images/norway.png" class="destinations__img" alt="Norway">
+                        <button class="destinations__hover">Book now</button>
+                    </div>
+                    <a href="#" class="destinations__link">Norway</a>
+                    <a href="#" class='destinations__card-link'></a>
+                </li>
+                <li class="destinations__card">
+                    <div class="destinations__image-wrapper">
+                        <img src="images/island.png" class="destinations__img" alt="Island">
+                        <button class="destinations__hover">Book now</button>
+                    </div>
+                    <a href="#" class="destinations__link">Island</a>
+                    <a href="#" class='destinations__card-link'></a>
+                </li>
+            </ul>
+            <button aria-label="next" class="destinations__btn-ellipse">
+                <img src='images/arrow.svg' class="arrow-btn">
+            </button>
         </div>
     </div>
 </section>
@@ -333,136 +324,136 @@
 <!--Desktop Sign Up-->
 
 <section class="signUp">
-    <div class="signUp_container col-lg-12 col-sm-6">
-        <div class="signUp_ellipse">
+    <div class="signUp__container">
+        <div class="signUp__ellipse">
             <div class="outer-circle">
                 <svg class="svg-user">
                     <use href="./images/sprite.svg#user"/>
                 </svg>
             </div>
         </div>
-        <div class="signUp_wrapper">
-            <p class="signUp_title">Sign up and get 20%
+        <div class="signUp__wrapper">
+            <p class="signUp__title">Sign up and get 20%
                 off your first booking</p>
-            <button class="signUp_button">Sign Up</button>
+            <button class="signUp__button">Sign Up</button>
         </div>
+        <button class="signUp__btn-close">
+            <img src="images/cross.svg" class="signUp__cross">
+        </button>
     </div>
 </section>
 
 <!--Reviews-->
 
 <section class="reviews">
-    <div class="reviews_container col-lg-12 col-sm-6">
-        <h2 class="reviews_title">Guests reviews</h2>
-        <h2 class="reviews_title-phone">Reviews</h2>
-        <div class="reviews_row">
-            <div class="reviews_card">
-                <img src="images/spa.png" class="reviews_img" alt="Bali">
-                <div class="reviews_price-wrapper">
-                    <p class="reviews_price">From 250 USD</p>
-                </div>
-                <div class="reviews_card_wrapper">
-                    <div class="reviews_description">
-                        <div class="reviews_resort">
-                            <p class="reviews_hotel">Ubud Bali Resort&SPA</p>
-                            <p class="reviews_location">Bali, Indonesia</p>
-                        </div>
-                        <div class="reviews_score">
-                            <button class="reviews_rating">9,4</button>
-                            <p class="reviews_amount">1324 reviews</p>
-                        </div>
+    <div class="reviews__container">
+        <h2 class="reviews__title">Guests reviews</h2>
+        <h2 class="reviews__title-phone">Reviews</h2>
+        <div class="reviews__row-wrapper">
+            <ul class="reviews__row">
+                <li class="reviews__card">
+                    <img src="images/spa.png" class="reviews__img" alt="Bali">
+                    <div class="reviews__price-wrapper">
+                        <p class="reviews__price">From 250 USD</p>
                     </div>
-                    <div class="reviews_account">
-                        <div class="svg-profile">
-                            <img src='images/profile.svg'>
-                        </div>
-                        <div class="account_data">
-                            <p class="reviews_name">Hanna Ivanova</p>
-                            <p class="reviews_citizenship">🇺🇦 Ukraine</p>
-                        </div>
-                    </div>
-                    <p class="reviews_review">Great location, really pleasant and clean rooms, but the thing that makes
-                        this such a good place to stay are the staff. All of the people are incredibly helpful and
-                        generous with their time and advice.
-                    </p>
-                </div>
-                <div class="dots_wrapper">
-                    <div class="dot-color"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-            </div>
-            <div class="reviews_card">
-                <img src="images/hostel.png" class="reviews_img" alt="Netherlands">
-                <div class="reviews_price-wrapper">
-                    <p class="reviews_price">From 40 USD</p>
-                </div>
-                <div class="reviews_card_wrapper">
-                    <div class="reviews_description">
-                        <div class="reviews_resort">
-                            <p class="reviews_hotel">King Kong Hostel</p>
-                            <p class="reviews_location">Rotterdam, Netherlands</p>
-                        </div>
-                        <div class="reviews_score">
-                            <button class="reviews_rating">8,9</button>
-                            <p class="reviews_amount">2016 reviews</p>
-                        </div>
-                    </div>
-                    <div class="reviews_account">
-                        <div class="svg-profile">
-                            <img src='images/profile.svg'>
-                        </div>
-                        <div class="account_data">
-                            <p class="reviews_name">Adam Smith</p>
-                            <p class="reviews_citizenship">🇺🇸 USA</p>
-                        </div>
-                    </div>
-                    <p class="reviews_review america">I've been in this hostel for a month and here is the best hostel
-                        of all
-                        Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and
-                        excellent
-                        Most importantly, those who work here are kind and good-natured.
-                    </p>
-                </div>
-            </div>
-            <div class="reviews_card">
-                <img src="images/hotel.png" class="reviews_img" alt="Marocco">
-                <div class="reviews_price-wrapper">
-                    <p class="reviews_price">From 100 USD</p>
-                </div>
-                <div class="reviews_card_wrapper">
-                    <div class="reviews_description">
-                        <div class="reviews_resort">
-                            <p class="reviews_hotel">Rokoko Hotel</p>
-                            <p class="reviews_location">Ourika, Marocco</p>
-                        </div>
-                        <div class="reviews_score">
-                            <button class="reviews_rating">9,1</button>
-                            <p class="reviews_amount">815 reviews</p>
-                        </div>
-                    </div>
-                    <div class="reviews_account">
-                        <div class="svg-profile">
-                            <img src='images/profile.svg'>
-                        </div>
-                        <div class="account_data">
-                            <p class="reviews_name">Anika Messer</p>
-                            <p class="reviews_citizenship">🇩🇪 Germany</p>
-                        </div>
-                    </div>
-                    <p class="reviews_review">Efficient, friendly, professional, and appropriately attentive. Great
-                        hotel in a great location. Easy access to all the surrounding historical sites. Staff is
-                        fantastic. Will definitely stay at this location during my next stay in Marocco.
-                    </p>
-                    <div class="reviews_ellipse">
-                        <div class="reviews_outer-circle">
-                            <div class="reviews_arrow">
-                                <img src="images/arrow.svg">
+                    <div class="reviews__card-wrapper">
+                        <div class="reviews__description">
+                            <div class="reviews__resort">
+                                <a href="#" class="reviews__hotel">Ubud Bali Resort&SPA</a>
+                                <p class="reviews__location">Bali, Indonesia</p>
+                            </div>
+                            <div class="reviews__score">
+                                <span class="reviews__rating">9,4</span>
+                                <p class="reviews__amount">1324 reviews</p>
                             </div>
                         </div>
+                        <div class="reviews__account">
+                            <div class="svg-profile">
+                                <img src='images/profile.svg'>
+                            </div>
+                            <div class="account__data">
+                                <p class="reviews__name">Hanna Ivanova</p>
+                                <p class="reviews__citizenship">🇺🇦 Ukraine</p>
+                            </div>
+                        </div>
+                        <p class="reviews__review">Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.
+                        </p>
+                        <a href="#" class='reviews__card-link'></a>
                     </div>
-                </div>
+                </li>
+                <li class="reviews__card">
+                    <img src="images/hostel.png" class="reviews__img" alt="Netherlands">
+                    <div class="reviews__price-wrapper">
+                        <p class="reviews__price">From 40 USD</p>
+                    </div>
+                    <div class="reviews__card-wrapper">
+                        <div class="reviews__description">
+                            <div class="reviews__resort">
+                                <a href="#" class="reviews__hotel">King Kong Hostel</a>
+                                <p class="reviews__location">Rotterdam, Netherlands</p>
+                            </div>
+                            <div class="reviews__score">
+                                <span class="reviews__rating">8,9</span>
+                                <p class="reviews__amount">2016 reviews</p>
+                            </div>
+                        </div>
+                        <div class="reviews__account">
+                            <div class="svg-profile">
+                                <img src='images/profile.svg'>
+                            </div>
+                            <div class="account__data">
+                                <p class="reviews__name">Adam Smith</p>
+                                <p class="reviews__citizenship">🇺🇸 USA</p>
+                            </div>
+                        </div>
+                        <p class="reviews__review america">I've been in this hostel for a month and here is the best hostel of all
+                            Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
+                            Most importantly, those who work here are kind and good-natured.
+                        </p>
+                        <a href="#" class='reviews__card-link'></a>
+                    </div>
+                </li>
+                <li class="reviews__card">
+                    <img src="images/hotel.png" class="reviews__img" alt="Marocco">
+                    <div class="reviews__price-wrapper">
+                        <p class="reviews__price">From 100 USD</p>
+                    </div>
+                    <div class="reviews__card-wrapper">
+                        <div class="reviews__description">
+                            <div class="reviews__resort">
+                                <a href="#" class="reviews__hotel">Rokoko Hotel</a>
+                                <p class="reviews__location">Ourika, Marocco</p>
+                            </div>
+                            <div class="reviews__score">
+                                <span class="reviews__rating">9,1</span>
+                                <p class="reviews__amount">815 reviews</p>
+                            </div>
+                        </div>
+                        <div class="reviews__account">
+                            <div class="svg-profile">
+                                <img src='images/profile.svg' class="reviews__svg">
+                            </div>
+                            <div class="account__data">
+                                <p class="reviews__name">Anika Messer</p>
+                                <p class="reviews__citizenship">🇩🇪 Germany</p>
+                            </div>
+                        </div>
+                        <p class="reviews__review">Efficient, friendly, professional, and appropriately attentive. Great
+                            hotel in a great location. Easy access to all the surrounding historical sites. Staff is
+                            fantastic. Will definitely stay at this location during my next stay in Marocco.
+                        </p>
+                        <button aria-label="next" class="reviews__btn-ellipse">
+                            <img src='images/arrow.svg' class="btn-arrow">
+                        </button>
+                        <a href="#" class='reviews__card-link'></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="dots__wrapper">
+                <button class="dot dot-color"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
             </div>
         </div>
     </div>
@@ -471,13 +462,15 @@
 <!--Mobile Sign Up-->
 
 <section class="signUp-sm">
-    <div class="signUp-sm_container col-sm-6">
-        <img src="images/cross.svg" class="signUp-sm_cross">
-        <img src="images/logo-square.svg" class="signUp-sm_logo">
-        <div class="signUp-sm_app">
-            <p class="signUp-sm_title">Sign up in the app and get 20%
+    <div class="signUp-sm__container">
+        <button class="signUp-sm__btn-close" aria-label="close" type="button">
+            <img src="images/cross.svg" class="signUp-sm__cross">
+        </button>
+        <img src="images/logo-square.svg" class="signUp-sm__logo">
+        <div class="signUp-sm__app">
+            <p class="signUp-sm__title">Sign up in the app and get 20%
                 off your first booking</p>
-            <p class="signUp-sm_install">Install</p>
+            <p class="signUp-sm__install">Install</p>
         </div>
     </div>
 </section>
@@ -485,48 +478,35 @@
 <!--Footer-->
 
 <footer class="footer">
-    <svg class="footer_svg-logo">
-        <use href="./images/sprite.svg#logo"/>
-    </svg>
-    <div class="footer__container col-lg-11 col-sm-6">
-        <div class="footer__col about col-sm-1">
-            <a href="#!" class="footer__link-main">About</a>
-            <a href="#!" class="footer__link">How Triphouse works</a>
-            <a href="#!" class="footer__link">Careers</a>
-            <a href="#!" class="footer__link">Privacy</a>
-            <a href="#!" class="footer__link">Terms</a>
+    <div class="footer__container">
+        <svg class="footer__logo svg-logo">
+            <use href="./images/sprite.svg#logo"/>
+        </svg>
+        <div class="footer__col-wrapper">
+            <div class="footer__col about">
+                <a href="#!" class="footer__link-main">About</a>
+                <a href="#!" class="footer__link">How Triphouse works</a>
+                <a href="#!" class="footer__link">Careers</a>
+                <a href="#!" class="footer__link">Privacy</a>
+                <a href="#!" class="footer__link">Terms</a>
+            </div>
+            <div class="footer__col property">
+                <a href="#!" class="footer__link-main">Property types</a>
+                <a href="#!" class="footer__link">Guest houses</a>
+                <a href="#!" class="footer__link">Hotels</a>
+                <a href="#!" class="footer__link">Apartments</a>
+                <a href="#!" class="footer__link">Villas</a>
+                <a href="#!" class="footer__link">Holiday homes</a>
+                <a href="#!" class="footer__link">Hostels</a>
+            </div>
+            <div class="footer__col support">
+                <a href="#!" class="footer__link-main">Support</a>
+                <a href="#!" class="footer__link">Contact Customer Service</a>
+                <a href="#!" class="footer__link">FAQ</a>
+            </div>
         </div>
-        <div class="footer__col property col-sm-2">
-            <a href="#!" class="footer__link-main">Property types</a>
-            <a href="#!" class="footer__link">Guest houses</a>
-            <a href="#!" class="footer__link">Hotels</a>
-            <a href="#!" class="footer__link">Apartments</a>
-            <a href="#!" class="footer__link">Villas</a>
-            <a href="#!" class="footer__link">Holiday homes</a>
-            <a href="#!" class="footer__link">Hostels</a>
-        </div>
-        <div class="footer__col support col-sm-1">
-            <a href="#!" class="footer__link-main">Support</a>
-            <a href="#!" class="footer__link">Contact Customer Service</a>
-            <a href="#!" class="footer__link">FAQ</a>
-        </div>
+        <p class="footer__paragraph">© 2022Triphouse, Inc. All rights reserved</p>
     </div>
-    <p class="footer__paragraph">© 2022Triphouse, Inc. All rights reserved</p>
 </footer>
-<!--<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script><script>-->
-<!--    const splide = new Splide('.gallery', {-->
-<!--        type: 'loop',-->
-<!--        drag: 'free',-->
-<!--        focus: 'center',-->
-<!--        perPage: 3,-->
-<!--        arrows: false,-->
-<!--        pagination: false,-->
-<!--        autoScroll: {-->
-<!--            speed: 2,-->
-<!--        },-->
-<!--    });-->
-<!--    splide.mount(window.splide.Extensions);-->
-<!--</script>&ndash;&gt;-->
 </body>
 </html>
