@@ -1,6 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap";
 
-
 :root {
     --col-width: calc(100% / 14);
     --white: #fff;
@@ -28,65 +27,6 @@ body {
     font-family: Roboto, sans-serif;
     height: 100%;
 }
-
-/*SVG*/
-
-.svg-sprite {
-    position: absolute;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-
-.svg-logo {
-    width: 205px;
-    height: 40px;
-    fill: var(--blue);
-}
-
-.svg-night {
-    width: 30px;
-    height: 40px;
-    fill: var(--white);
-}
-
-.svg-account {
-    height: 40px;
-    width: 40px;
-    fill: var(--white);
-}
-
-.svg-google {
-    width: 140px;
-    height: 40px;
-}
-
-.svg-apple {
-    width: 125px;
-    height: 40px;
-}
-
-.svg-headphones {
-    width: 75px;
-    height: 92px;
-}
-
-.svg-messages {
-    width: 84px;
-    height: 84px;
-}
-
-.svg-computer {
-    width: 100px;
-    height: 67px;
-    margin-top: 15px;
-}
-
-.svg-like {
-    width: 92px;
-    height: 84px;
-}
-
 
 .col-lg-1 {
     width: var(--col-width);
@@ -144,7 +84,60 @@ body {
     width: 100%;
 }
 
-/*Main*/
+.svg-sprite {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.svg-logo {
+    width: 205px;
+    height: 40px;
+    fill: var(--blue);
+}
+
+.svg-night {
+    width: 30px;
+    height: 40px;
+    fill: var(--white);
+}
+
+.svg-account {
+    height: 40px;
+    width: 40px;
+    fill: var(--white);
+}
+
+.svg-google {
+    width: 140px;
+    height: 40px;
+}
+
+.svg-apple {
+    width: 125px;
+    height: 40px;
+}
+
+.svg-headphones {
+    width: 75px;
+    height: 92px;
+}
+
+.svg-messages {
+    width: 84px;
+    height: 84px;
+}
+
+.svg-computer {
+    width: 100px;
+    height: 67px;
+}
+
+.svg-like {
+    width: 92px;
+    height: 84px;
+}
 
 .main__container {
     background-image: url("/images/background.png");
@@ -230,8 +223,6 @@ body {
     margin-bottom: 24px;
 }
 
-/*Desktop Form*/
-
 .top-section__form {
     display: flex;
     align-items: flex-end;
@@ -288,21 +279,16 @@ body {
     background-color: var(--blue);
 }
 
-/*Mobile form*/
 
 .top-section__form-sm {
     display: none;
 }
-
-/*Download buttons*/
 
 .download {
     display: flex;
     gap: 8px;
     justify-content: center;
 }
-
-/*Offer section*/
 
 .offer__container {
     padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);;
@@ -354,7 +340,7 @@ body {
 }
 
 .svg-computer {
-    top: 1px;
+    top: 16px;
 }
 
 .offer__caption {
@@ -365,8 +351,6 @@ body {
     color: var(--text-color);
     margin-top: 147px;
 }
-
-/*Favorites*/
 
 .favorites__container {
     padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);;
@@ -446,8 +430,6 @@ body {
     right: -17px;
     border: none;
 }
-
-/*Destinations*/
 
 .destinations__container {
     background-color: var(--white);
@@ -591,8 +573,6 @@ body {
 }
 
 
-/*<!--Desktop Sign Up-->*/
-
 .signUp {
     padding: 0 var(--container-pad-lt-rt);
 }
@@ -651,13 +631,9 @@ body {
     width: 26px;
 }
 
-/*Mobile Sign Up*/
-
 .signUp-sm {
     display: none;
 }
-
-/*Reviews*/
 
 .reviews__container {
     padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);;
@@ -828,8 +804,6 @@ body {
     display: none;
 }
 
-/*Footer*/
-
 .footer__container {
     background-color: var(--dark-blue);
     padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);;
@@ -884,8 +858,6 @@ body {
     line-height: 1.1;
 }
 
-/*Mobile*/
-
 @media (max-width: 768px) {
     :root {
         --col-width: calc(100% / 6);
@@ -917,7 +889,6 @@ body {
         width: 100%;
     }
 
-    /*Header mobile*/
     .main__container {
         padding-top: 12px;
         padding-bottom: var(--container-pad-btm-top);
@@ -969,7 +940,7 @@ body {
         display: none;
     }
 
-    /*Top-section Mobile*/
+
     .top-section {
         margin-bottom: 32px;
     }
@@ -1102,13 +1073,11 @@ body {
         line-height: var(--unitless-value);
     }
 
-    /*Download buttons Mobile*/
     .download {
         padding-left: 0;
         justify-content: center;
     }
 
-    /*Offer mobile*/
     .offer__container {
         padding: 24px 73px var(--container-pad-btm-top);
     }
@@ -1147,7 +1116,6 @@ body {
     .svg-messages {
         width: 58px;
         height: 58px;
-        margin-top: 2px;
     }
 
     .svg-computer {
@@ -1217,7 +1185,6 @@ body {
         display: none;
     }
 
-    /*Destinations mobile*/
     .destinations__container {
         padding-bottom: var(--container-pad-btm-top);
     }
@@ -1303,12 +1270,10 @@ body {
         display: none;
     }
 
-    /*Desktop Sign Up*/
     .signUp {
         display: none;
     }
 
-    /*Mobile Sign Up*/
     .signUp-sm {
         display: inline;
     }
@@ -1346,7 +1311,6 @@ body {
         color: var(--blue);
     }
 
-    /*Reviews Mobile*/
     .reviews {
         background-color: var(--background-color);
     }
