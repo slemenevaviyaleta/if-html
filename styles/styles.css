@@ -28,6 +28,15 @@ body {
     height: 100%;
 }
 
+.container {
+    max-width:1230px;
+    width:100%;
+    margin:0  auto;
+    padding-left:16px;
+    padding-right:16px;
+}
+
+
 .col-lg-1 {
     width: var(--col-width);
 }
@@ -139,11 +148,12 @@ body {
     height: 84px;
 }
 
-.main__container {
+.main {
     background-image: url("/images/background.png");
-    padding: 51px var(--container-pad-lt-rt);;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 51px;
+    padding-bottom: var(--container-pad-btm-top);
 }
 
 .header__navbar {
@@ -229,7 +239,7 @@ body {
     margin-bottom: 120px;
     background-color: var(--white);
     border-radius: 8px;
-    max-height: 64px;
+    max-height: 68px;
 }
 
 .form__field {
@@ -250,10 +260,9 @@ body {
     line-height: var(--unitless-value);
     color: var(--text-color);
     width: 100%;
-    padding: 22px 24px;
+    padding: 20px 24px;
     border-radius: 8px;
     border: 3px solid transparent;
-    max-height: 64px;
     cursor: pointer;
 }
 
@@ -268,7 +277,6 @@ body {
 
 .form__btn {
     flex-basis: 193px;
-    height: 64px;
     border-style: none;
     border-radius: 8px;
     font-size: 24px;
@@ -277,6 +285,7 @@ body {
     cursor: pointer;
     color: var(--white);
     background-color: var(--blue);
+    padding: 20px 57px;
 }
 
 
@@ -290,10 +299,9 @@ body {
     justify-content: center;
 }
 
-.offer__container {
-    padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);;
+.offer {
+    padding: var(--container-pad-btm-top) 0;
 }
-
 .offer__title {
     text-align: center;
     font-weight: 500;
@@ -352,9 +360,9 @@ body {
     margin-top: 147px;
 }
 
-.favorites__container {
-    padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);;
+.favorites {
     background-color: var(--background-color);
+    padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);
 }
 
 .favorites__title {
@@ -431,7 +439,7 @@ body {
     border: none;
 }
 
-.destinations__container {
+.destinations {
     background-color: var(--white);
     padding: var(--container-pad-btm-top) var(--container-pad-lt-rt) 210px;
 }
@@ -559,7 +567,7 @@ body {
 .destinations__btn-ellipse {
     position: absolute;
     top: 113%;
-    left: 48%;
+    left: 50%;
     border: none;
     display: flex;
     justify-content: center;
@@ -572,17 +580,12 @@ body {
     transform: translateX(-50%) rotate(90deg);
 }
 
-
-.signUp {
-    padding: 0 var(--container-pad-lt-rt);
-}
-
 .signUp__container {
-    background: var(--background-color);
-    display: flex;
-    padding: 50px 0 55px 25px;
-    gap: 24px;
     position: relative;
+    display: flex;
+    gap: 24px;
+    background-color: var(--background-color);
+    padding: 51px 24px;
 }
 
 .signUp__title {
@@ -635,8 +638,8 @@ body {
     display: none;
 }
 
-.reviews__container {
-    padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);;
+.reviews {
+    padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);
 }
 
 .reviews__title {
@@ -660,7 +663,6 @@ body {
 .reviews__card {
     grid-column: span 4;
     background-color: var(--background-color);
-    position: relative;
     transition: all 0.3s ease-in-out 0.1s;
 }
 
@@ -684,12 +686,8 @@ body {
     opacity: 0.7;
 }
 
-.reviews__price-wrapper {
-    position: absolute;
-    width: 100%;
-    background-color: rgb(56 56 56 / 70%);
-    height: 48px;
-    top: 46%;
+.reviews__image-wrapper {
+    position: relative;
 }
 
 .reviews__price {
@@ -697,8 +695,11 @@ body {
     font-size: 18px;
     line-height: var(--unitless-value);
     color: var(--white);
-    padding-top: 16px;
-    padding-left: 24px;
+    padding: 16px 0 11px 24px;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(56 56 56 / 70%);
+    top: 87%;
 }
 
 .reviews__card-wrapper {
@@ -804,9 +805,9 @@ body {
     display: none;
 }
 
-.footer__container {
+.footer {
     background-color: var(--dark-blue);
-    padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);;
+    padding: var(--container-pad-btm-top) var(--container-pad-lt-rt);
 }
 
 .footer__logo {
@@ -838,6 +839,10 @@ body {
     font-size: 20px;
     line-height: var(--unitless-value);
     padding-bottom: 24px;
+}
+
+.footer__col > a:hover {
+    color: var(--yellow);
 }
 
 .footer__link:last-child {
@@ -889,9 +894,8 @@ body {
         width: 100%;
     }
 
-    .main__container {
+    .main {
         padding-top: 12px;
-        padding-bottom: var(--container-pad-btm-top);
     }
 
     .header__navbar {
@@ -1360,7 +1364,7 @@ body {
         margin-bottom: 7px;
     }
 
-    .reviews__price-wrapper {
+    .reviews__price {
         display: none;
     }
 
